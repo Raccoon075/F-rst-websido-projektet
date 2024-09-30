@@ -1,0 +1,26 @@
+
+h1{
+    background-color: cornflowerblue;
+}
+
+
+.nav{
+    background-color:rgb(216, 216, 216);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav a {
+    color:black;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-family: magneto;
+    font-size: 20px;
+
+}
+
+nav a:hover{
+    background-color: white;
+    color:black;
