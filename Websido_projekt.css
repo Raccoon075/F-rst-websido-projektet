@@ -1,26 +1,142 @@
 
-h1{
-    background-color: cornflowerblue;
+header{
+    background-color: #505050;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: dubai;
+    position:fixed;
+    width: 100vw;
+    top: 0;
+}
+*{
+    margin: 0;
 }
 
-
-.nav{
-    background-color:rgb(216, 216, 216);
+.money{
+    background-color:#3e3e3e;
     overflow: hidden;
+    float:right;
+    position: fixed;
+    top:130px;
+    right:0;
+    
+}
+.money a{
+    background-color:#3e3e3e ;
+    text-decoration: none;
+    color:#ffffff;
+    font-family: dubai;
+    padding: 10px 14px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav a {
-    color:black;
+.money a:hover{
+    background-color: #505050;
+}
+
+
+.navbar{
+    background-color: #3e3e3e;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top:80px;
+    
+}
+.navbar a {
+    color:#ffffff;
     text-align: center;
     padding: 10px 14px;
     text-decoration: none;
-    font-family: magneto;
+    font-family: dubai;
     font-size: 20px;
+}
+
+.navbar a:hover{
+    background-color: #505050;
+    color:#ffffff;
+                
+}
+
+
+
+.layout{
+    display: grid;
+    background-color:#959595 ;
+    min-height: 270vh;
+    grid-template-columns: 4fr 2fr 4fr;
+    grid-template-rows: 134px 4fr 3% 4fr 3% 4fr 2fr;
+
+
+
+    grid-template-areas: 
+    "spacer spacer spacer"
+    "head head head"
+    "mdiv1 mdiv1 mdiv1"
+    "info2 info2 bild2"
+    "mdiv2 mdiv2 mdiv2"
+    "bild1 info1 info1"
+    "foot foot foot";
+}
+
+#parallax{
+    grid-area: head;
+    background-color: #ffffff;
 
 }
 
-nav a:hover{
-    background-color: white;
-    color:black;
+#bild1{
+    grid-area: bild1;
+    background-color: #959595;
+}
+
+
+#bild2{
+    grid-area: bild2;
+    background-color:#959595;
+}
+
+
+#foot{
+    grid-area: foot;
+    background-color: black;
+}
+
+
+#mittdivide1{
+    grid-area: mdiv1;
+    background-color: #3e3e3e;
+}
+
+
+#info1{
+    grid-area: info1;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+
+
+#info2{
+    grid-area: info2;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+#mittdivide2{
+    grid-area: mdiv2;
+    background-color: #3e3e3e;
+
+}
+#spacer{
+    grid-area: Spacer;
+    background-color: black; 
+}

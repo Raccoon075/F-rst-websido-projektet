@@ -2,3 +2,8 @@ https://wireframe.cc/kcUAcT
 https://wireframe.cc/bpuexF
 https://wireframe.cc/yABU9q
 https://wireframe.cc/mho32q
+color 1:#210F04
+color 2:#452103
+color 3:#690500
+color 4:#934B00
+color 5:#BB6B00
