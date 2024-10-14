@@ -10,6 +10,8 @@ header{
     position:fixed;
     width: 100vw;
     top: 0;
+    color: #ffffff;
+    z-index: 3;
 }
 *{
     margin: 0;
@@ -22,7 +24,7 @@ header{
     position: fixed;
     top:130px;
     right:0;
-    
+    z-index: 3;
 }
 .money a{
     background-color:#3e3e3e ;
@@ -49,7 +51,7 @@ header{
     position: fixed;
     width: 100vw;
     top:80px;
-    
+    z-index: 3;
 }
 .navbar a {
     color:#ffffff;
@@ -62,20 +64,17 @@ header{
 
 .navbar a:hover{
     background-color: #505050;
-    color:#ffffff;
-                
+    color:#ffffff;         
 }
 
 
 
 .layout{
     display: grid;
-    background-color:#959595 ;
+    background-color:black;
     min-height: 270vh;
     grid-template-columns: 4fr 2fr 4fr;
     grid-template-rows: 134px 4fr 3% 4fr 3% 4fr 2fr;
-
-
 
     grid-template-areas: 
     "spacer spacer spacer"
@@ -89,54 +88,230 @@ header{
 
 #parallax{
     grid-area: head;
-    background-color: #ffffff;
-
+    background-color:black;
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/15/12/46/raccoon-7593913_1280.jpg);
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    z-index: 1;
+    background-position-y: -150px;
+    opacity:0.7 ;
 }
 
 #bild1{
     grid-area: bild1;
     background-color: #959595;
+    background-image: url(https://larsfoto.se/img/images/large/1150760_northern-raccoon_tvattbjorn_procyon-lotor_country-diamond-fremont-county-iowa-usa_20230510_1_1000.jpg);
+    background-size: 110%;
+    z-index: 2;
 }
-
 
 #bild2{
     grid-area: bild2;
     background-color:#959595;
+    background-image: url(https://larsfoto.se/img/images/large/1150760_northern-raccoon_tvattbjorn_procyon-lotor_tofino-resort-and-marina-vancouver-island-canada_20230522_4_1000.jpg);
+    background-size: 130%;
+    background-position: -70px;
+    z-index: 2;
 }
-
 
 #foot{
     grid-area: foot;
     background-color: black;
+    z-index: 2;
 }
-
 
 #mittdivide1{
     grid-area: mdiv1;
     background-color: #3e3e3e;
+    z-index: 2;
 }
-
 
 #info1{
     grid-area: info1;
     background-color: #ffffff;
-    border-radius: 20px;
+    z-index: 2;
 }
-
-
 
 #info2{
     grid-area: info2;
     background-color: #ffffff;
-    border-radius: 20px;
+    z-index: 2;
 }
 
 #mittdivide2{
     grid-area: mdiv2;
     background-color: #3e3e3e;
-
+    z-index: 2;
 }
+
 #spacer{
     grid-area: Spacer;
     background-color: black; 
+    z-index: 2;
+}
+
+header2{
+    background-color: #505050;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: dubai;
+    position:fixed;
+    width: 100vw;
+    top: 0;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.navbar2{
+    background-color: #3e3e3e;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top:80px;
+    z-index: 3;
+}
+.navbar2 a {
+    color:#ffffff;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-family: dubai;
+    font-size: 20px;
+}
+
+.navbar2 a:hover{
+    background-color: #505050;
+    color:#ffffff;          
+}
+
+
+
+.layout2{
+    display: grid;
+    background-color:black;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 116px 750px 300px;
+
+    grid-template-areas: 
+    "spacer spacer spacer"
+    "info1 knapp head"
+    "foot foot foot";
+}
+
+#parallax2{
+    grid-area: head; 
+    background-color:black;
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/15/12/46/raccoon-7593913_1280.jpg);
+    height: 100vw;
+    width:100vw;
+    position:fixed;
+    opacity:0.7 ;
+}
+
+
+#Produkt{
+    grid-area: info1;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+
+#knappar{
+    grid-area: knapp;
+    background-color: antiquewhite;
+    z-index: 2;
+}
+
+.layout3{
+    display: grid;
+    background-color:black;
+    min-height: 200vh;
+    grid-template-columns: 4fr 2fr 4fr;
+    grid-template-rows: 134px 4fr 3% 4fr 2fr;
+
+    grid-template-areas: 
+    "spacer spacer spacer"
+    "info4 info4 bild4"
+    "mdiv3 mdiv3 mdiv3"
+    "bild3 info3 info3"
+    "foot foot foot";
+
+}
+
+
+#bild3{
+    grid-area:bild3;
+    background-size: cover;
+    background-position: -100px;
+    background-image: url(https://media.ahmedabadmirror.com/am/uploads/mediaGallery/image/1683131637214.jpg-org);
+}
+
+#bild4{
+    grid-area:bild4;
+    background-size: cover;
+    background-position-x: -200px;
+    background-image: url(https://www.philips.com/c-dam/corporate/en_AA/about/about-us/executive-profile/roy-jakobs/roy-jakobs-ceo-masthead-l.jpg);
+}
+
+#info3{
+    grid-area:info3;
+    background-color: #ffffff;
+}
+
+#info4{
+    grid-area: info4;
+    background-color: #ffffff;
+}
+#mittdivide{
+    grid-area: mdiv3;
+    background-color: #505050;
+}
+
+.buttons{
+    height: 300px;
+    display:grid;
+    background-color:white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas:
+    "pajpal"
+    "swoosh"
+    "kluvna";
+
+
+}
+
+#pajpal{
+    grid-area: pajpal;
+    z-index: 3;
+    border-radius: 20px;
+    background-color: black;
+    background-size: cover;
+    background-position: 0px -60px;
+    background-image: url(https://i0.wp.com/www.frenchweb.fr/wp-content/uploads/2023/02/LOGO-850-paypal.png?w=850&ssl=1);
+}
+
+#swoosh{
+    grid-area: swoosh;
+    z-index: 3;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-color: black;
+    background-image: url(https://www.bmkuddevalla.se/wp-content/uploads/2022/12/Swish-Logo-Secondary-Dark-BG--300x91.png);
+}
+ 
+#kluvna{
+    grid-area: kluvna;
+    z-index: 3;
+    border-radius: 20px;
+    background-color: rgb(210, 138, 49);
 }
