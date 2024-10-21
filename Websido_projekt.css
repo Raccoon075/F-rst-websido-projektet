@@ -2,11 +2,9 @@
 header{
     background-color: #505050;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+    font-size: 48px;
     font-family: dubai;
+    padding-left: 30px;
     position:fixed;
     width: 100vw;
     top: 0;
@@ -130,6 +128,9 @@ header{
 #info1{
     grid-area: info1;
     background-color: #ffffff;
+    font-family: dubai;
+    font-size: 18px;
+    padding: 40px;
     z-index: 2;
 }
 
@@ -137,6 +138,9 @@ header{
     grid-area: info2;
     background-color: #ffffff;
     z-index: 2;
+    font-family: dubai;
+    font-size: 18px;
+    padding: 40px;
 }
 
 #mittdivide2{
@@ -154,10 +158,8 @@ header{
 header2{
     background-color: #505050;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+    padding-left: 30px;
+    font-size: 48px;
     font-family: dubai;
     position:fixed;
     width: 100vw;
@@ -188,7 +190,7 @@ header2{
 
 .navbar2 a:hover{
     background-color: #505050;
-    color:#ffffff;          
+    color:#ffffff;      
 }
 
 
@@ -198,12 +200,20 @@ header2{
     background-color:black;
     min-height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 116px 750px 300px;
+    grid-template-rows: 134px 510px 300px;
 
     grid-template-areas: 
     "spacer spacer spacer"
-    "info1 knapp head"
+    "info5 knapp head"
     "foot foot foot";
+}
+
+#info5{
+    padding: 40px;
+    
+    grid-area: info5;
+    background-color: white;
+    z-index: 2;
 }
 
 #parallax2{
@@ -212,6 +222,7 @@ header2{
     background-image: url(https://cdn.pixabay.com/photo/2022/11/15/12/46/raccoon-7593913_1280.jpg);
     height: 100vw;
     width:100vw;
+    background-position-x: 650px;
     position:fixed;
     opacity:0.7 ;
 }
@@ -226,7 +237,7 @@ header2{
 
 #knappar{
     grid-area: knapp;
-    background-color: antiquewhite;
+    background-color: white;
     z-index: 2;
 }
 
@@ -264,24 +275,34 @@ header2{
 #info3{
     grid-area:info3;
     background-color: #ffffff;
+    padding:40px;
+    font-family: dubai;
 }
 
 #info4{
     grid-area: info4;
     background-color: #ffffff;
+    padding:40px;
+    font-family: dubai;
 }
 #mittdivide{
     grid-area: mdiv3;
     background-color: #505050;
 }
 
+
+
 .buttons{
     height: 300px;
     display:grid;
+    gap: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     background-color:white;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-
+    
     grid-template-areas:
     "pajpal"
     "swoosh"
@@ -294,24 +315,31 @@ header2{
     grid-area: pajpal;
     z-index: 3;
     border-radius: 20px;
-    background-color: black;
+    height: 130px;
+    background-color: #505050;
     background-size: cover;
-    background-position: 0px -60px;
+    background-position: 0px -40px;
     background-image: url(https://i0.wp.com/www.frenchweb.fr/wp-content/uploads/2023/02/LOGO-850-paypal.png?w=850&ssl=1);
 }
 
 #swoosh{
     grid-area: swoosh;
     z-index: 3;
+    height: 130px;
     border-radius: 20px;
     background-size: 100% 100%;
-    background-color: black;
+    background-color: #505050;
     background-image: url(https://www.bmkuddevalla.se/wp-content/uploads/2022/12/Swish-Logo-Secondary-Dark-BG--300x91.png);
 }
  
 #kluvna{
     grid-area: kluvna;
     z-index: 3;
+    height: 130px;
     border-radius: 20px;
-    background-color: rgb(210, 138, 49);
+    background-color: #505050;
+    background-size: 350px, 100%;
+    background-position: 8px;
+    object-fit: cover;
+    background-image: url(https://docs.klarna.com/assets/media/ca5f7ca7-9f00-4934-9280-6967ff56dc63/Wordmark_Transparent_And_Black.png);
 }
